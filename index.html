@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>LIBRARY</title>
+</head>
+<body>
+        <div class="container">
+            <h1>THE BIGGEST LIBRARY</h1>
+            <div class="stand">
+                <table>
+                    <tr class="firstOne">
+                        <!-- maior largura = 60% -->
+                        <td>Name</td>
+                        <td>Author</td>
+                        <td>Genre</td>
+                        <td>Read</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="btn-form">
+                <button class="btn-elegant" id="addBook">Add a New Book</button>
+            </div>
+        </div>
+
+        <!-- form para add livros -->
+
+         <div class="bookForm">
+            <div id="close">⨯</div>
+            <p>Fill the next filds:</p>
+            <form id="form">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" required>
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author" required>
+                <label for="genre">Genre</label>
+                <select name="genre" id="genre">
+                    <option value="" disabled selected>Choose here</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Mistery">Mistery</option>
+                    <option value="War">War</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Slice of Life">Slice of Life</option>
+                </select>
+                <label for="read">Did you read it?</label>
+                <select name="read" id="read">
+                    <option value="" disabled selected>Choose here</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+
+                <div class="add">
+                    <button type="submit" id="addPlease">Click to add!</button>
+                </div>
+            </form>
+
+
+
+
+
+
+
+         </div>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+* {padding: 0; margin: 0; font-family: Roboto;}
+
+
+
+body {
+    background: url(https://images.unsplash.com/photo-1533327325824-76bc4e62d560?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: 100%;
+}
+
+
+h1 {
+    font-family: "Big Shoulders";
+    text-align: center;
+    color: rgb(211, 205, 205);
+    padding-top: 2rem;
+}
+
+
+
+.container {
+    background-color: rgba(32, 32, 32, 0.9);
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    height: 560px;
+    border-radius: 20px;
+
+}
+
+.stand {
+    color: #535353;
+    margin: 1rem auto;
+    width: 90%;
+    height: 85%;
+    overflow: auto;
+    scrollbar-width: thin;
+}
+
+
+tr:first-child {
+    font-weight: bold;
+}
+tr td:first-child {
+    width: 60%
+}
+
+.firstOne {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+td {
+    padding: 0.4rem 0;
+    color: rgb(211, 205, 205);
+}
+
+.firstOne td {
+    border-bottom: 1px solid #535353;
+    padding-bottom: 5px; 
+}
+
+table {
+    width: 100%;
+}
+
+.btn-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    margin-bottom: 15px;
+}
+
+.btn-elegant {
+    padding: 15px 30px;
+    border: 2px solid #2c2c2c;
+    background-color: #1a1a1a;
+    color: rgb(211, 205, 205);
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+
+}
+
+.btn-elegant::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.25) 0%,
+        rgba(255, 255, 255, 0.25) 70%,
+    );
+    transform: scale(0) ;
+    transition: transform 0.5s ease;
+}
+
+.btn-elegant:hover::after {
+    transform: scale(4);
+}
+
+.btn-elegant:hover {
+    border-color: #666666;
+    background: #292929 ;
+}
+/* AQUI PODE DAR RUIM */
+.bookForm {
+    width: 40%;
+    display: none;
+    padding: 2rem;
+    border-radius: 20px;
+    background:#f7f7f7 ;
+    border: 1px solid #d7d7d7;
+    font-size: 0.9rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, -50%);
+}
+
+#close {
+    position: absolute;
+    right: 15px;
+    top:10px;
+    cursor: pointer;
+}
+
+.bookForm p {
+    padding-bottom: 0.5rem;
+}
+
+label {
+    width: 100%;
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+form {
+    height: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+}
+
+input {
+    border-radius: 5px ;
+    border: 1px solid #d7d7d7;
+    width: 100%;
+}
+
+
+input:focus {
+    outline: 1px solid #535353;
+}
+
+.add {
+    margin-top: 1rem;
+    text-align: center;
+    grid-column: span 2/ span 2;
+}
+
+.bookForm button {
+    width: 150px;
+}
+
+td:last-child {
+    text-align: center;
+}
+
+.reading {
+    cursor: pointer;
+}
+
+
+/* classe oculta */
+#deleteBook {
+    width: 18px;
+    height: 18px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    border-radius: 100%;
+    cursor: pointer;
+    color: #4a4a4a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
